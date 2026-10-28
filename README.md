@@ -1,5 +1,18 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Markdown formatting
+
+The note editor stores formatting as Markdown. Underline is represented with the
+safe inline syntax `++underlined text++`, which the app renders as underlined
+text without enabling arbitrary raw HTML in note content.
+
+## Draft recovery
+
+Unfinished note creation and edit sessions are stored separately in browser
+localStorage. On return, use **Resume Draft** to continue, **Save Draft** to
+explicitly add or update the note, or **Discard Draft** to remove the recovery
+copy. Editing drafts do not replace saved notes until they are explicitly saved.
+
 ## Getting Started
 
 First, run the development server:
